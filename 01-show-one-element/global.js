@@ -1,4 +1,12 @@
 window.addEventListener("load", function(){
+  var clickIt = document.getElementById("more_text_link");
+  clickIt.addEventListener("click", function(){
+    var textToShow = document.getElementById("more_text_content");
+    textToShow.style.display = "inline"
+    clickIt.style.display = "none"
+
+  });
+});
 
   // Here is some pseudo-code to help you get started:
 
@@ -14,4 +22,3 @@ window.addEventListener("load", function(){
 
   // 5. Also modify the DOM to hide the "More info..." link.
   
-});
